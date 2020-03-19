@@ -1,0 +1,9 @@
+version: '3'
+services: 
+  web:
+    image: "mihaiadi21/test"
+    ports:
+      - "8080:3000"
+    volumes:
+      - /usr/app/node_modules
+      - .:/usr/app
